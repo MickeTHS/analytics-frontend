@@ -8,6 +8,8 @@
 import App from './App.vue'
 
 import auth from './service/store/auth.module';
+import customer from './service/store/customer.module';
+import user from './service/store/user.module';
 
 // Composables
 import { createApp } from 'vue'
@@ -17,7 +19,9 @@ import { createStore } from "vuex";
 const store = createStore({
   /* state, actions, mutations */
   modules: {
-    auth
+    auth,
+    customer,
+    user
   }
 });
 
